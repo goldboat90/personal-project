@@ -1,0 +1,486 @@
+/*Home Tab*/
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #f0edf2
+
+}
+@font-face {
+    font-family: "big-noodle";
+    src: url("../img/big_noodle_titling.ttf") format("truetype");
+}
+.main-nav {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 8%;
+    left: 0;
+    right: 0;
+    background-color: rgba(40,53,79,.9);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    z-index: 1001;
+
+}
+.stick {
+transition: all 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+position:fixed;
+z-index:999;
+margin: 0;
+}
+.overwatch-logo {
+    margin-top: .5vh;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.nav-menu {
+    display: flex;
+    height: 100%;
+    float: left;
+}
+.nav-section {
+    width: auto;
+    height: 100%;
+    padding-left: 1.5625vw;
+    padding-right: 1.5625vw;
+    cursor: pointer;
+    border-left: 1px solid hsla(0,0%,100%,.03);
+    color: hsla(0,0%,100%,.85);
+    font-weight: bold;
+    font-family: Futura,century gothic,arial,sans-serif;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    align-items: center;
+    display: flex;
+    float: left;
+    opacity: 1;
+    font-size: 1.1vw;
+}
+.nav-section:hover {
+    background-color: hsla(0,0%,100%,.07);
+    color: hsla(0,0%,100%,1);
+}
+.purchase:hover {
+    background-color: #f8b035
+}
+.purchase {
+    background-color: #f89e35;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+.one-section {
+
+}
+.action-bar {
+    display: flex;
+    width: 85%;
+    height: 6vh;
+    margin-left: 8vw;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 7px;
+
+}
+.play-trailer {
+    width: 37%;
+    height: 100%;
+    background-color: #f89e35;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.play-trailer:hover {
+    background-color: #f8b035
+}
+.trailer-video {
+    background-image: url("../img/gameplayTrailer.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.play-icon {
+    background-image: url('../img/playbutton.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 66%;
+    width: 38%;
+}
+.trailer-text {
+    font-size: 2.5vw;
+    color: hsla(0,0%,100%,.85);
+    margin-right: 15px;
+    font-family: 'Lalezar', cursive;
+}
+.buy-now-action-bar {
+    width: 37%;
+    height: 100%;
+    background-color: #f89e35;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+}
+.buy-now-action-bar:hover {
+    background-color: #f8b035
+}
+.buy-game-text {
+    font-family: 'Lalezar', cursive;
+    color: hsla(0,0%,100%,.85);
+    font-size: 2.5vw;
+    margin-left: 15px;
+}
+.game-image {
+    background-image: url("../img/pcGame.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200%;
+    width: 20%;
+}
+
+.search-player {
+
+}
+.main-image {
+    width: 100%;
+    height: auto;
+}
+.h2 {
+    font-size: 2vw;
+    text-align: center;
+    color: #405275;
+    font-family: 'Lalezar';
+}
+.featuredNews {
+    display: block;
+    margin-top: 25px;
+
+}
+.newsContainer {
+    max-width: 1250px;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*.season2Wrapper {
+    width: 50%;
+}*/
+.season2 {
+    background-image: url("../img/season2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: inherit;
+    height: 70%;
+    width: 40%;
+    display: flex;
+    align-items: flex-end;
+}
+.captionBar1 {
+    width: 100%;
+    height: 15%;
+    background-color: black;
+    opacity: .7;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    font-size: 1vw
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.animatedShort {
+    background-image: url("../img/bastion.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: inherit;
+    height: 70%;
+    width: 25%;
+
+}
+.patchNotes {
+    background-size: cover;
+    background-image: url("../img/patchNotes.jpg");
+    background-repeat: no-repeat;
+    height: 70%;
+    width: 25%;
+}
+.newsWrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.allNews {
+    border: 2px solid;
+    border-color: #00a5e2;
+    font-size: 2.8vw;
+    width: 30vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.icon {
+    height: 24px;
+    fill: #f0edf2;
+    stroke: #f0edf2;
+    stroke-width: 0;
+}
+.viewAllNews {
+    color: #00a5e2;
+    width: 100%;
+    text-align: center;
+    font-family: 'Lalezar';
+    display: flex;
+    align-items: center;
+
+}
+.viewAllNews:hover {
+    color: white;
+    background-color: #00a5e2;
+}
+.exploreGame {
+    background-image: url("../img/cairo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+.fightHeader {
+    text-align: center;
+    font: italic normal normal 5vw big-noodle, impact, sans-serif;
+    width: 100%;
+
+        text-shadow: 0 4px 5px rgba(60,72,96,.5);
+        color: #f0edf2;
+}
+.introText {
+    color: white;
+    text-align: center;
+    font: normal normal normal 1.8vw 'Lalezar',century gothic,arial,sans-serif;
+}
+
+.footer {
+    width: 100%;
+    height: 43vh;
+    background-image: url('../img/buy-bar.jpg');
+    background-repeat: no-repeat;
+    border-top: .35rem solid hsla(0,0%,45%,.7);
+}
+.footer-buy {
+    height: 60%;
+    width: 100%;
+    padding: 72px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-buy-button {
+    width: 10%;
+    height: 70%;
+    background-color: #ff9c00;
+    border: 3px solid #ff9c00;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-buy-text {
+    font-size: 2.5vw;
+    font-family: 'lalezar';
+    color: #fff;
+    letter-spacing: 2px;
+    margin-top: 3px;
+    margin-left: 3px;
+}
+.footer-buy-button:hover {
+    background-color: #f8b035
+
+}
+
+
+/**//*Heroes Tab*//**/
+/**//*Heroes Tab*//**/
+
+
+.candy2-img {
+    background: url("../img/candy2.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+    height: 170vh;
+}
+.main-container {
+    width: 100%;
+    height: 100%;
+    padding-top: 96px;
+}
+.max-width-container {
+    padding-top: 72px;
+    padding-bottom: 72px;
+    height: 100%;
+    width: 88%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding-right: 30px;
+    padding-left: 30px;
+    /*margin-left: 85px;
+    margin-right: 85px;*/
+
+}
+.need-a-hero-container {
+    margin-right: 440px;
+}
+.need-a-hero {
+    font: italic normal normal 60px big-noodle, impact, sans-serif;
+    font-weight: 100;
+    color: #405275
+}
+.need-a-hero-intro-text {
+    font: 1.75vw 'lalezar';
+    color: #405275
+}
+.heroes-index {
+    margin-top: 50px;
+    height: 100%;
+    width: 100%;
+}
+.navigation-selector {
+    width: auto;
+    border-spacing: 1px;
+    margin-bottom: 50px;
+}
+.navigation-list {
+    display: flex;
+    flex-direction: row;
+}
+.navigation-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 162px;
+    width: 162px;
+    border-radius: 2px;
+    background-color: hsla(0,0%,100%,.3);
+    line-height: 1.6;
+    height: 45px;
+    margin-left: 2px;
+    cursor: pointer;
+}
+.navigation-item:hover {
+    background-color: #fff;
+
+}
+.icon {
+    fill: #1a325e;
+    margin-right: 9px;
+    margin-bottom: 3px;
+    height: 18px;
+}
+.nav-item-text {
+    font-family: 'lalezar';
+    color: rgba(40,53,79,.9);
+}
+.active {
+    background-color: #fff;
+}
+.hero-bar {
+    height: 1153.56px;
+    /*display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;*/
+}
+.hero-container {
+    float: left;
+    margin: 4px;
+    height: 250px;
+    position: relative;
+    cursor: pointer;
+}
+
+.bottom-container {
+    position: absolute;
+    background: rgba(40,53,79,.9);
+    height: 3.6rem;
+    width: 100%;
+    bottom: 0;
+}
+.icon-plate {
+    fill: #fff;
+    height: 16px;
+    margin-top: .4rem;
+    margin-left: .4rem;
+}
+.plate-hero-name {
+    display: flex;
+    justify-content: center;
+}
+.pics{
+    background-image: url("../img/hero-portrait.jpg");
+    background-size: cover;
+    height: 100%;
+    width: auto;
+    border: 1px solid #fff;
+}
+
+/*////////////////////////////////////
+///          Single Hero          ///
+///////////////////////////////////*/
+
+.abilities {
+    height: 75vh;
+    width: 100%;
+}
+.ability-showcase {
+    position: relative;
+    padding-bottom: 46vw;
+    overflow: hidden;
+
+}
+.ability-showcase-video {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+}
+.hero-detail {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 75vh;
+    overflow:hidden;
+}
+.hero-detail-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+.video-background-vid {
+    width: 100%;
+    height: auto;
+}

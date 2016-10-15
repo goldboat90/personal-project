@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html ng-app="overwatchApp">
+    <head>
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <link rel="stylesheet" href="./styles/reset.css">
+        <link rel="stylesheet" href="./styles/main.css" media="screen" title="no title">
+        <link href="https://fonts.googleapis.com/css?family=Lalezar" rel="stylesheet">
+        <title></title>
+    </head>
+    <body>
+
+            <div class='main-nav'>
+
+
+                <div class="nav-menu">
+                    <div class="overwatch-logo">
+                        <img src="./img/nav-logo-sm-copyright.png" ui-sref='home' class='main-image'/>
+                    </div>
+
+
+                <ul class="nav-menu">
+
+                    <li class='nav-section game'>Game</li>
+                    <li ui-sref='heroes' class='nav-section'>Heroes</li>
+                    <li class='nav-section'>Media</li>
+                    <li class='nav-section'>News</li>
+                    <li class='nav-section'>Community</li>
+                    <li class='search-player'></li>
+
+                </ul>
+                </div>
+
+                <div>
+                    <div class='nav-section'>Login</div>
+                    <div class='nav-section purchase'>buy</div>
+                </div>
+
+            </div>
+
+            <ui-view></ui-view>
+
+            <section class='footer'>
+                <div class="footer-buy">
+                    <div class="footer-buy-button">
+                        <span class='footer-buy-text'>BUY</span>
+                    </div>
+                </div>
+                <div class="stay-connected-bar">
+
+                </div>
+
+            </section>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+    <script src="
+https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/controller.js"></script>
+    <script src="/js/heroes/heroesCtrl.js"></script>
+    <script src="/js/heroes/heroesService.js"></script>
+    <script src="/js/heroes/heroesDirective.js"></script>
+    <script src="/js/heroes/heroFilter.js"></script>
+    <script src="/js/heroes/singleHeroCtrl.js"></script>
+
+
+    </body>
+</html>
