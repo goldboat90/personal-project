@@ -229,10 +229,6 @@ margin: 0;
     font-size: 2.8vw;
     width: 30vw;
     height: 5vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
 }
 .icon {
     height: 24px;
@@ -243,10 +239,11 @@ margin: 0;
 .viewAllNews {
     color: #00a5e2;
     width: 100%;
-    text-align: center;
+    height: 100%;
     font-family: 'Lalezar';
     display: flex;
-    align-items: center;
+    align-self: center;
+    justify-content: center;
 
 }
 .viewAllNews:hover {
@@ -278,7 +275,15 @@ margin: 0;
     text-align: center;
     font: normal normal normal 1.8vw 'Lalezar',century gothic,arial,sans-serif;
 }
-
+.explore-button{
+    font-size: 3.2rem;
+    font-family: 'lalezar';
+    padding: 10px 40px 9px;
+    color: #fff;
+    background-color: #ff9c00;
+    margin-left: auto;
+    margin-right: auto;
+}
 .footer {
     width: 100%;
     height: 43vh;
