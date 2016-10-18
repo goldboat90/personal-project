@@ -1,33 +1,34 @@
 <div class='abilities'>
     <div class="ability-showcase">
 
-        <video autoplay loop class='ability-showcase-video'>
-            <source ng-src="{{hero.introvid}}" type="video/webm">
+        <video id="my-video" autoplay loop class='ability-showcase-video'>
+            <source ng-src="{{mainVid}}" type="video/webm">
         </video>
 
     <div class="ability-showcase-controls">
         <div class="max-width-controls">
             <h1 class='hero-name'>{{hero.heroname}}</h1>
+            <h4 class='hero-description'>{{abilityName}}</h4>
             <ul class="ability-button-list">
-                <li class="ability-showcase-button">
+                <li ng-click="vidChange(hero.introvid)" class="ability-showcase-button">
 
                     <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="button-bg-svg"><circle cx="50" cy="50" r="50"></circle></svg>
                     <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="progress-svg" style="stroke-dashoffset: 314px;"><circle cx="50" cy="50" r="50"></circle></svg>
                     <img ng-src={{hero.ability1button}} class="hero-ability-icon" />
                 </li>
-                <li class="ability-showcase-button">
+                <li ng-click="vidChange(hero.ability1)" class="ability-showcase-button">
                     <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="button-bg-svg"><circle cx="50" cy="50" r="50"></circle></svg>
                     <img ng-src={{hero.ability2button}} class="hero-ability-icon" />
                 </li>
-                <li class="ability-showcase-button">
+                <li ng-click="vidChange(hero.ability2)" class="ability-showcase-button">
                     <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="button-bg-svg"><circle cx="50" cy="50" r="50"></circle></svg>
                     <img ng-src={{hero.ability3button}} class="hero-ability-icon" />
                 </li>
-                <li class="ability-showcase-button">
+                <li ng-click="vidChange(hero.ability3)" class="ability-showcase-button">
                     <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="button-bg-svg"><circle cx="50" cy="50" r="50"></circle></svg>
                     <img ng-src={{hero.ability4button}} class="hero-ability-icon" />
                 </li>
-                <li class="ability-showcase-button">
+                <li ng-click="vidChange(hero.ability4)" class="ability-showcase-button">
                     <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="button-bg-svg"><circle cx="50" cy="50" r="50"></circle></svg>
                     <img ng-src={{hero.ability5button}} class="hero-ability-icon" />
                 </li>
@@ -53,8 +54,100 @@
                 <ul class='details-tabs'>
                     <li class='tabs-title'>OVERVIEW</li>
                     <li class='tabs-title2'>STORY</li>
-
                 </ul>
+
+                <div class="tabs-content">
+                    <section class="overview">
+                        <div class="hero-detail-wrapper">
+                            <div class="hero-detail-row">
+                                <div class="column-detail-role">
+                                    <h3 class='h3-hero-desc'>ROLE</h3>
+                                    <h4 class='h4-hero-desc'>{{hero.heroclass}}</h4>
+
+                                </div>
+                                <div class="column-difficulty">
+                                    <div class="hero-detail-diff">
+                                        <h3 class='h3-hero-desc'>DIFFICULTY</h3>
+                                        <span class='star'></span>
+                                        <span class='star'></span>
+                                        <span class='star'></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <p class='hero-detail-description'>
+                                {{hero.herodescription}}
+                            </p>
+                        </div>
+                        <hr class="tab-separator">
+                        <div class="hero-detail-wrapper2">
+                            <h3 class='h3-hero-desc'>ABILITIES</h3>
+                            <div class="hero-detail-abilities"></div>
+                            <div class="hero-ability">
+                                <div class="hero-ability-icon-container">
+                                    <div class="hero-ability-icon-bg">
+                                        <img class="hero-ability-icon2" ng-src={{hero.ability2button}}>
+                                    </div>
+                                </div>
+                                <div class="hero-ability-description-wrapper">
+                                    <p class="hero-ability-title">
+                                        {{hero.ability1name}}
+                                    </p>
+                                    <p class="hero-ability-description">
+                                        {{hero.ability1text}}
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="hero-ability">
+                                <div class="hero-ability-icon-container">
+                                    <div class="hero-ability-icon-bg">
+                                        <img class="hero-ability-icon2" ng-src={{hero.ability3button}}>
+                                    </div>
+                                </div>
+                                <div class="hero-ability-description-wrapper">
+                                    <p class="hero-ability-title">
+                                        {{hero.ability2name}}
+                                    </p>
+                                    <p class="hero-ability-description">
+                                        {{hero.ability2text}}
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="hero-ability">
+                                <div class="hero-ability-icon-container">
+                                    <div class="hero-ability-icon-bg">
+                                        <img class="hero-ability-icon2" ng-src={{hero.ability4button}}>
+                                    </div>
+                                </div>
+                                <div class="hero-ability-description-wrapper">
+                                    <p class="hero-ability-title">
+                                        {{hero.ability3name}}
+                                    </p>
+                                    <p class="hero-ability-description">
+                                        {{hero.ability3text}}
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="hero-ability">
+                                <div class="hero-ability-icon-container">
+                                    <div class="hero-ability-icon-bg">
+                                        <img class="hero-ability-icon2" ng-src={{hero.ability5button}}>
+                                    </div>
+                                </div>
+                                <div class="hero-ability-description-wrapper">
+                                    <p class="hero-ability-title">
+                                        {{hero.ability4name}}
+                                    </p>
+                                    <p class="hero-ability-description">
+                                        {{hero.ability4text}}
+                                    </p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </section>
+                </div>
 
             </div>
         </div>

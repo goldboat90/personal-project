@@ -1,19 +1,27 @@
-angular.module('overwatchApp').controller('singleHeroCtrl', function($state, $scope, hero) {
-
+angular.module('overwatchApp').controller('singleHeroCtrl', function($state, $scope, hero, $sce, heroesService) {
     $scope.hero = hero;
-
     $scope.nameOfHero = $state.params.heroname;
+    $scope.mainVid = hero.introvid;
+    $scope.abilityName = '';
 
+    $scope.vidChange = function(newVid) {
+        switch(newVid){
+            case hero.ability1:
+                $scope.abilityName = hero.ability1name
+                break;
+            case hero.ability2:
+                $scope.abilityName = hero.ability2name
+                break;
+            case hero.ability3:
+                $scope.abilityName = hero.ability3name
+                break;
+            case hero.ability4:
+                $scope.abilityName = hero.ability4name
+                break;
+            default:
+                $scope.abilityName = '';
+        }
+        heroesService.play(newVid);
+    }
 
-    // $scope.getHero = function() {
-    //     heroesService.getHeroes().then(function(res){
-    //         for (var i = 0; i < res.data.length; i++) {
-    //             if (res.data[i].heroname === $state.params.heroname) {
-    //                 $scope.hero = res.data[i];
-    //             }
-    //         }
-
-    //     })
-    // }
-    // $scope.getHero();
 })
