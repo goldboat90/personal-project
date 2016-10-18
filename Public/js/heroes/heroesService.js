@@ -2,7 +2,7 @@ angular.module('overwatchApp').service('heroesService', function($http) {
     this.play = function(filename) {
         var videoElement = document.querySelector( '#my-video');
         videoElement.src = filename;
-        videoElement.play();     //  <-- Thats all you need
+        videoElement.play();
     }
 
     this.getHeroes = function() {

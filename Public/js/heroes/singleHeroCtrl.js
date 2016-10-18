@@ -25,3 +25,9 @@ angular.module('overwatchApp').controller('singleHeroCtrl', function($state, $sc
     }
 
 })
+// $(document).ready(function() {
+//
+//     $('ability-showcase-button').hover(function() {
+//         $(this).addClass('button-bg-svg:hover');
+//     })
+// });

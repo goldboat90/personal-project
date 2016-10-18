@@ -102,8 +102,8 @@ margin: 0;
     background-image: url("../img/gameplayTrailer.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 80px;
-    width: 150px;
+    height: 100px;
+    width: 170px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,6 +119,7 @@ margin: 0;
     font-size: 2.5vw;
     color: hsla(0,0%,100%,.85);
     margin-right: 15px;
+    margin-top: 5px;
     font-family: 'Lalezar', cursive;
 }
 .buy-now-action-bar {
@@ -139,6 +140,7 @@ margin: 0;
     color: hsla(0,0%,100%,.85);
     font-size: 2.5vw;
     margin-left: 15px;
+    margin-top: 5px;
 }
 .game-image {
     background-image: url("../img/pcGame.png");
@@ -259,11 +261,17 @@ margin: 0;
     color: #00a5e2;
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.view-all-news-text {
     font-family: 'Lalezar';
     display: flex;
-    align-self: center;
+    align-items: center;
     justify-content: center;
-
+    padding-top: 7px;
 }
 .viewAllNews:hover {
     color: white;
@@ -759,6 +767,8 @@ margin: 0;
     cursor: pointer;
     display: inline-block;
     margin: 0 .8rem;
+    /*fill: rgba(64,82,117,.9);*/
+
 }
 .button-bg-svg {
     position: absolute;
@@ -771,6 +781,9 @@ margin: 0;
     stroke: rgba(240,237,242,.4);
     stroke-width: 2;
 }
+/*.button-bg-svg:hover {
+    fill: rgba(64,82,117,.9);
+}*/
 .progress-svg {
     stroke-dashoffset: 314px;
     position: absolute;
@@ -800,8 +813,10 @@ margin: 0;
     left: 50%;
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-
 }
+/*.hero-ability-icon:hover {*/
+    /*background-color: rgba(64,82,117,.9);*/
+/*}*/
 .hero-detail::before {
     height: 2rem;
     background-image: url("../img/wing.png");
