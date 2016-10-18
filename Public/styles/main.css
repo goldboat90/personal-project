@@ -46,20 +46,20 @@ margin: 0;
 .nav-section {
     width: auto;
     height: 100%;
-    padding-left: 1.5625vw;
-    padding-right: 1.5625vw;
+    padding-left: 1.125vw;
+    padding-right: 1.125vw;
     cursor: pointer;
     border-left: 1px solid hsla(0,0%,100%,.03);
     color: hsla(0,0%,100%,.85);
     font-weight: bold;
     font-family: Futura,century gothic,arial,sans-serif;
-    letter-spacing: .05em;
+    /*letter-spacing: .05em;*/
     text-transform: uppercase;
     align-items: center;
     display: flex;
     float: left;
     opacity: 1;
-    font-size: 1.1vw;
+    font-size: .7vw;
 }
 .nav-section:hover {
     background-color: hsla(0,0%,100%,.07);
@@ -102,8 +102,8 @@ margin: 0;
     background-image: url("../img/gameplayTrailer.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 70px;
-    width: 125px;
+    height: 80px;
+    width: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -224,11 +224,13 @@ margin: 0;
     justify-content: center;
 }
 .allNews {
-    border: 2px solid;
+    border: 3px solid;
     border-color: #00a5e2;
     font-size: 2.8vw;
     width: 30vw;
     height: 5vh;
+    margin-left: auto;
+    margin-right: auto;
 }
 .icon {
     height: 24px;
@@ -252,6 +254,7 @@ margin: 0;
 }
 .exploreGame {
     background-image: url("../img/cairo.jpg");
+    /*background-attachment: fixed;*/
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 50px;
@@ -260,6 +263,8 @@ margin: 0;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    padding-right: 50px;
+    padding-left: 50px;
 
 }
 .fightHeader {
@@ -283,6 +288,205 @@ margin: 0;
     background-color: #ff9c00;
     margin-left: auto;
     margin-right: auto;
+}
+.heroes-section {
+    background-image: url("../img/candy3.jpg");
+    background-position: top;
+    background-size: cover;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    height: 115vh;
+}
+.heroes-section-max-width {
+    width: 100%;
+    height: 100%;
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.heroes-section-text-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: none;
+    height: 28.5%;
+}
+.column {
+    width: 100%;
+    float: left;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+.intro-heading {
+    background: -webkit-linear-gradient(top,#3f6493 10%,#345177);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-shadow: 0 4px 5px rgba(60,72,96,.5);
+    margin-bottom: 44px;
+    /*font-style: italic;*/
+    font: italic normal normal 4.5rem big-noodle ,impact,sans-serif
+}
+.intro-text {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 3.6rem;
+    color: #405275;
+    font: normal normal normal 1.5rem 'lalezar' ,century gothic,arial,sans-serif
+}
+.hero-selector-container {
+    width: 100%;
+    height: 71.5%;
+    display: flex;
+    flex-direction: row;
+}
+.hero-icon-container {
+    width: 50%;
+    height: 100%;
+    margin-top: 5%;
+    /*float: left;*/
+}
+.hero-small-icon {
+    float: left;
+    margin-right: 10px;
+    height: 90px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+
+}
+.picturas {
+    height: 75px;
+    /*-webkit-transform: skew(-.25rad);
+    -ms-transform: skew(-.25rad);
+    transform: skew(-.25rad);*/
+    background-color: rgba(51,51,51,.9);
+    border-radius: 7px;
+}
+
+.picturas:hover {
+    background-color: #f7931e;
+}
+.hero-popup {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.hero-popup-name {
+    font-family: big-noodle;
+    font: italic normal normal 10px big-noodle ,impact,sans-serif;
+    font-size: 4rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    color: #f0edf2;
+}
+
+.hero-full-icon {
+    height: 95%;
+    width: 100%;
+    border: 0;
+    outline: none;
+}
+
+.scroll-wallpaper {
+    /*height: 30vh;*/
+    width: 100%;
+    background-image: url("../img/dorado.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 24rem;
+    background-position: center 16%;
+}
+.purchase-section {
+    text-align: center;
+    position: relative;
+    border-top: 1px solid hsla(0,0%,100%,.4);
+    background-image: url("../img/museum.jpg");
+    background-position: top;
+    background-size: cover;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    height: 80vh;
+    width: 100%;
+}
+.widow-full-portrait {
+    background-image: url('../img/widow-portrait.png');
+    background-size: 100% auto;
+    height: 118%;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.purchase-max-width {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.right-block {
+    margin-left: 50%;
+    width: 41.66667%;
+
+}
+.buy-now-intro-text {
+    margin-top: -1em;
+    color: #405275;
+    font: normal normal normal 1.5rem 'lalezar' ,century gothic,arial,sans-serif;
+    margin-bottom: 3.6rem;
+    line-height: 1.47;
+}
+.buy-now-button {
+    width: 40%;
+    height: 60px;
+    background-color: #ff9c00;
+    border: 3px solid #ff9c00;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.buy-now-button:hover {
+    background-color: #f8b035;
+    border-color: #f8b035;
+}
+.buy-now-text {
+    font-size: 2.5vw;
+    font-family: 'lalezar';
+    color: #fff;
+    letter-spacing: 2px;
+    margin-top: 3px;
+    margin-left: 3px;
+}
+.overwatch-games {
+    margin-top: 1.2rem;
+    position: relative;
+}
+.overwatch-game {
+    vertical-align: top;
+    width: 23%;
+    max-width: 180px;
+    margin-top: 1.5rem;
+    border: 0;
+}
+.overwatch-game-pc {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    width: 33%;
+    max-width: 251px;
+    margin: 0 1rem -2rem;
 }
 .footer {
     width: 100%;
@@ -318,10 +522,32 @@ margin: 0;
     margin-left: 3px;
 }
 .footer-buy-button:hover {
-    background-color: #f8b035
+    background-color: #f8b035;
 
 }
-
+.footer-rule {
+    margin: 0;
+    max-width: none;
+    border-bottom: 2px solid #cacaca;
+    opacity: .1;
+}
+.stay-connected-bar {
+    padding: 10px 30px 10px 30px;
+    width: 100%;
+    height: 40%;
+}
+.social-media-container {
+    margin-top: 5px;
+    width: 100%;
+    height: 60%;
+}
+.social-media-image {
+    background-image: url('../img/social-media.png');
+    background-repeat: no-repeat;
+    width: auto%;
+    height: 100%;
+    margin-left: 36vw;
+}
 
 /**//*Heroes Tab*//**/
 /**//*Heroes Tab*//**/
@@ -333,7 +559,7 @@ margin: 0;
     background-position: top;
     background-size: cover;
     width: 100%;
-    height: 170vh;
+    height: 180vh;
 }
 .main-container {
     width: 100%;
@@ -357,12 +583,12 @@ margin: 0;
     margin-right: 440px;
 }
 .need-a-hero {
-    font: italic normal normal 60px big-noodle, impact, sans-serif;
+    font: italic normal normal 80px big-noodle, impact, sans-serif;
     font-weight: 100;
     color: #405275
 }
 .need-a-hero-intro-text {
-    font: 1.75vw 'lalezar';
+    font: 1.50vw 'lalezar';
     color: #405275
 }
 .heroes-index {
@@ -451,41 +677,169 @@ margin: 0;
 /*////////////////////////////////////
 ///          Single Hero          ///
 ///////////////////////////////////*/
+.hero-video-wrapper {
+    /*display: flex;
+    flex-direction: column;*/
 
+}
 .abilities {
-    height: 75vh;
-    width: 100%;
+    /*height: 100vh;*/
+    /*width: 100%;*/
 }
 .ability-showcase {
     position: relative;
-    padding-bottom: 46vw;
-    overflow: hidden;
+    /*padding-bottom: 46vw;*/
+    /*overflow: hidden;*/
+}
+.ability-showcase-controls {
+    width: 100%;
+    height: 30vh;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 6.5rem;
+    text-align: center;
+}
+.max-width-controls {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero-name {
+    color: #f0edf2;
+    background: -webkit-linear-gradient(#f0edf2 50%,rgba(240,237,242,0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font: italic normal normal 10px big-noodle ,impact,sans-serif;
+    font-size: 8rem;
+    letter-spacing: .05rem;
+    margin-bottom: 2rem;
 
 }
-.ability-showcase-video {
+.ability-button-list {
+    margin-top: 1.8rem;
+    padding: 0;
+    margin: 0;
+}
+.ability-showcase-button {
+    position: relative;
+    width: 5vw;
+    height: 5vw;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 .8rem;
+}
+.button-bg-svg {
     position: absolute;
-    width: 100%;
     top: 0;
+    right: 0;
+    bottom: 0;
     left: 0;
+    overflow: visible;
+    fill: rgba(64,82,117,.4);
+    stroke: rgba(240,237,242,.4);
+    stroke-width: 2;
+}
+.progress-svg {
+    stroke-dashoffset: 314px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: visible;
+    fill: none;
+    stroke: #00c3ff;
+    stroke-width: 4.5;
+    stroke-dasharray: 314;
+    stroke-dashoffset: 314;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
 
+}
+.hero-ability-icon {
+    max-width: 90%;
+    max-height: 65%;
+    height: auto;
+    width: auto;
+    opacity: .7;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+
+}
+.hero-detail::before {
+    height: 2rem;
+    background-image: url("../img/wing.png");
+    bottom: 100%;
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    background-size: auto 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    z-index: 10000;
 }
 .hero-detail {
     position: relative;
-    width: 100%;
-    max-width: 100%;
-    height: 75vh;
-    overflow:hidden;
-}
-.hero-detail-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-
 }
 .video-background-vid {
     width: 100%;
-    height: auto;
+}
+.hero-video-container {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero-detail-tabs {
+    padding-top: 72px;
+    padding-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 100%;
+}
+.tabs {
+    width: 50%;
+    height: 150%;
+}
+.details-tabs {
+    display: table;
+    width: calc(100% + 10px);
+    margin: -5px;
+    border-spacing: 5px;
+    white-space: nowrap;
+}
+.tabs-title {
+    display: table-cell;
+    background-color: rgba(19,42,77,.6);
+    width: 49.5%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'lalezar';
+}
+.tabs-title2 {
+    display: table-cell;
+    background-color: hsla(0,0%,100%,.6);
+    width: 49.5%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'lalezar';
+}
+.blank-space {
+    background-color: #f0edf2;
+    height: 80vh;
+    width: 100%;
 }

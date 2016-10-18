@@ -1,15 +1,63 @@
-<section class='abilities'>
+<div class='abilities'>
     <div class="ability-showcase">
-        <video loop muted autoplay class='ability-showcase-video'>
-            <source id="video" type="video/webm">
+
+        <video autoplay loop class='ability-showcase-video'>
+            <source ng-src="{{hero.introvid}}" type="video/webm">
         </video>
+
+    <div class="ability-showcase-controls">
+        <div class="max-width-controls">
+            <h1 class='hero-name'>{{hero.heroname}}</h1>
+            <ul class="ability-button-list">
+                <li class="ability-showcase-button">
+
+                    <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="button-bg-svg"><circle cx="50" cy="50" r="50"></circle></svg>
+                    <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="progress-svg" style="stroke-dashoffset: 314px;"><circle cx="50" cy="50" r="50"></circle></svg>
+                    <img ng-src={{hero.ability1button}} class="hero-ability-icon" />
+                </li>
+                <li class="ability-showcase-button">
+                    <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="button-bg-svg"><circle cx="50" cy="50" r="50"></circle></svg>
+                    <img ng-src={{hero.ability2button}} class="hero-ability-icon" />
+                </li>
+                <li class="ability-showcase-button">
+                    <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="button-bg-svg"><circle cx="50" cy="50" r="50"></circle></svg>
+                    <img ng-src={{hero.ability3button}} class="hero-ability-icon" />
+                </li>
+                <li class="ability-showcase-button">
+                    <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="button-bg-svg"><circle cx="50" cy="50" r="50"></circle></svg>
+                    <img ng-src={{hero.ability4button}} class="hero-ability-icon" />
+                </li>
+                <li class="ability-showcase-button">
+                    <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="button-bg-svg"><circle cx="50" cy="50" r="50"></circle></svg>
+                    <img ng-src={{hero.ability5button}} class="hero-ability-icon" />
+                </li>
+
+            </ul>
+        </div>
     </div>
 
-</section>
+    </div>
+
+</div>
+
 <section class="hero-detail">
+
     <div class='hero-detail-video'>
         <video autoplay loop class="video-background-vid">
             <source ng-src="{{hero.idlevid}}">
         </video>
     </div>
+    <div class="hero-video-container">
+        <div class="hero-detail-tabs">
+            <div class="tabs">
+                <ul class='details-tabs'>
+                    <li class='tabs-title'>OVERVIEW</li>
+                    <li class='tabs-title2'>STORY</li>
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
 </section>
+<section class='blank-space'></section>

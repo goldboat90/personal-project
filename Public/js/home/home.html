@@ -68,3 +68,60 @@ Now, conflict is rising across the world again, and the call has gone out to her
 </div>
 
 </section>
+
+<section class="heroes-section">
+    <div class="heroes-section-max-width">
+        <div class="heroes-section-text-container">
+            <div class="column">
+                <h2 class="intro-heading">THE WORLD NEEDS HEROES</h2>
+                <div class="intro-text">
+                    <p>No matter your playstyle, there’s a unique hero for you.
+                    <br>
+                    Master their abilities to unlock their potential and achieve victory.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-selector-container">
+
+            <div class="hero-icon-container">
+                <div class="hero-small-icon" ng-repeat="hero in heroes">
+                    <!-- <a href="/#/heroes/{{hero.heroname}}"/> -->
+
+                    <img class='picturas' ng-mouseenter="showIcon($index)" ng-src={{hero.smallicon}}>
+                    <span style="position: absolute; bottom: 0; font-family: 'big-noodle'; font-size: 1rem; color: #333; text-transform: uppercase; letter-spacing: 1.5px;">{{hero.heroname}}</span>
+                </div>
+            </div>
+            <div class="hero-popup">
+                <h2 class='hero-popup-name'>{{heroName}}</h2>
+                <img class="hero-full-icon" ng-src={{fullIcon}}>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="scroll-wallpaper"></section>
+
+<section class="purchase-section">
+    <div class="widow-full-portrait"></div>
+    <div class="purchase-max-width">
+        <div class="right-block">
+            <h2 class="intro-heading">BEGIN YOUR WATCH</h2>
+            <p class='buy-now-intro-text'>
+                The world could use a hero like you.
+                <br>
+                Choose an edition to start the battle.
+            </p>
+            <div class="buy-now-button">
+                <span class="buy-now-text">BUY NOW</span>
+            </div>
+            <div class="overwatch-games">
+                <img src="../../img/xbox-full.png" class="overwatch-game"/>
+                <img src="../../img/pc-full.png" class="overwatch-game-pc"/>
+                <img src="../../img/ps4-full.png" class="overwatch-game"/>
+
+            </div>
+        </div>
+    </div>
+</section

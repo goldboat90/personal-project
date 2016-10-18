@@ -2,14 +2,12 @@ angular.module('overwatchApp').controller('heroesCtrl', function($scope, heroesS
 
     $scope.heroOrder = 'Offense';
     $scope.sortHeroes = function(heroClass) {
-        console.log(heroClass);
         $scope.heroOrder = heroClass;
     }
 
 
     $scope.retrieveHeroes = function() {
         heroesService.getHeroes().then(function(res){
-            console.log(res);
             $scope.heroes = res.data;
         })
     }

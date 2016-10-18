@@ -3,7 +3,8 @@ angular.module('overwatchApp', ['ui.router']).config(function ($stateProvider, $
   $stateProvider
       .state('home', {
           url: '/',
-          templateUrl: 'js/home/home.html'
+          templateUrl: 'js/home/home.html',
+          controller: 'homeCtrl'
       })
       .state('heroes', {
           url: '/heroes',
@@ -13,6 +14,17 @@ angular.module('overwatchApp', ['ui.router']).config(function ($stateProvider, $
       .state('hero', {
           url: '/heroes/:heroname',
           templateUrl: 'js/heroes/singleHero.html',
-          controller: 'singleHeroCtrl'
+          controller: 'singleHeroCtrl',
+          resolve: {
+            hero: function (heroesService, $stateParams) {
+                return heroesService.getHeroes().then(function(res){
+                    for (var i = 0; i < res.data.length; i++) {
+                        if (res.data[i].heroname === $stateParams.heroname) {
+                            return res.data[i];
+                        }
+                    };
+                });
+            }
+        }
       })
 })
