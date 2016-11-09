@@ -33,7 +33,7 @@ z-index:999;
 margin: 0;
 }
 .overwatch-logo {
-    margin-top: .5vh;
+    margin-top: .9vh;
     cursor: pointer;
     margin-left: 10px;
     margin-right: 10px;
@@ -147,9 +147,9 @@ margin: 0;
     background-size: cover;
     background-repeat: no-repeat;
     height: 375%;
-    width: 23%;
+    width: 25%;
     overflow:visible;
-    z-index: 100000000;
+    z-index: 10;
 }
 
 .search-player {
