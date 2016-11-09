@@ -9,7 +9,7 @@ $(document).ready(function() {
         }
     });
 
-    
+
     // $('.hero-container').hover(makeBigger, returnToOriginalSize);
     //
     //     function makeBigger() {
@@ -18,6 +18,13 @@ $(document).ready(function() {
     //     function returnToOriginalSize() {
     //         $(this).css({height: "", width: ""});
         // }
+
+        // $('.hero-container').hover(function(){
+        //     $('.bottom-container').css('background-color', 'white');
+        // },function(){
+        //     $('.bottom-container').css('background-color', 'black');
+        // });
+
 
 
 });

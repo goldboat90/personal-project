@@ -673,13 +673,23 @@ margin: 0;
     position: relative;
     cursor: pointer;
 }
+.hero-container:hover  {
+        -ms-transform: scale(1.175, 1.175);
+        -webkit-transform: scale(1.175, 1.175);
+        transform: scale(1.175, 1.175);
+        z-index: 50000000;*/
 
+}
 .bottom-container {
     position: absolute;
     background: rgba(40,53,79,.9);
     height: 3.6rem;
     width: 100%;
     bottom: 0;
+}
+.bottom-container.active {
+    background-color: white;
+    height: 100px
 }
 .icon-plate {
     fill: #fff;
@@ -986,7 +996,7 @@ margin: 0;
     flex-wrap: nowrap;
 
     width: 100%;
-    height: 15%;
+    height: 16%;
 }
 .hero-ability-icon-container {
     flex: 0.2;
