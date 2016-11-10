@@ -2,15 +2,15 @@ var express = require('express');
 var cors = require('cors');
 var bodyParser = require('body-parser');
 var massive = require('massive');
-var connectionString = 'postgres://postgres:tyler@localhost/overwatchDB';
+// var connectionString = 'postgres://postgres:tyler@localhost/overwatchDB';
 var session = require('express-session')
-// var config = require('.')
+var config = require('./config.js')
 // var db = massive.connectSync({db: 'overwatchDB'})
 var app = express();
 
 
 module.exports = app;
-var massiveInstance = massive.connectSync({connectionString: connectionString});
+var massiveInstance = massive.connectSync({connectionString: config.connectionString});
 
 
 app.set('db', massiveInstance);
