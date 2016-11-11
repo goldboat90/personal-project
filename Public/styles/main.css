@@ -445,6 +445,7 @@ margin: 0;
 .widow-full-portrait {
     background-image: url('../img/widow-portrait.png');
     background-size: 100% auto;
+    background-repeat: no-repeat;
     height: 118%;
     width: 50%;
     position: absolute;
