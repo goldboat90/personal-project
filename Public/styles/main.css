@@ -303,7 +303,7 @@ margin: 0;
 .introText {
     color: white;
     text-align: center;
-    font: normal normal normal 1.8vw 'Lalezar',century gothic,arial,sans-serif;
+    font: normal normal normal 1.3vw 'Lalezar',century gothic,arial,sans-serif;
 }
 .explore-button{
     font-size: 3.2rem;
@@ -583,6 +583,7 @@ margin: 0;
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
+    position: relative;
     width: 100%;
     height: 180vh;
 }
